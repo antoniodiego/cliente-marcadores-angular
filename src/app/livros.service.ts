@@ -5,15 +5,11 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class LivrosService {
- url_livros = 'http://antonio.com:80/livros';
+ url_livros = 'http://localhost:8080/livro';
 
   constructor(private http: HttpClient) { }
 
-  listar(){
-    retutn this.http.
-    public get value() : string {
-      return 
-    }
-    
+  listar() {
+    return this.http.get<any[]>(`${this.url_livros}`);
   }
 }

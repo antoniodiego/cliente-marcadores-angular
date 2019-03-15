@@ -13,10 +13,11 @@ export class LivrosComponent implements OnInit {
   constructor(private servicolivro: LivrosService) { }
 
   ngOnInit() {
+    this.listar();
   }
 
   listar() {
-      this.servicolivro.listar().subscribe(res => this.livros = res);
+      this.servicolivro.listar().subscribe(dados => this.livros = dados);
   }
 
 }
