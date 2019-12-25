@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class LivrosService {
- url_livros = 'http://localhost:8080/livro';
+ url_livros = 'http://10.0.0.19:8080/livro';
 
   constructor(private http: HttpClient) { }
 
