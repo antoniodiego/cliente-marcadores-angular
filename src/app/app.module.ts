@@ -19,7 +19,8 @@ import { LoginFormComponent } from './login-form/login-form.component';
   imports: [
     BrowserModule,
      HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [LivrosService],
   bootstrap: [AppComponent]
