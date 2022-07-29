@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Login</h2>
+    <div [hidden]="submitted">
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="nome_usuario">Nome de usuário:</label>
+                <input type="text" class="form-control" id="nome_usuario" required [(ngModel)]="model.name" name="name" #name="ngModel">
+                <br/> Todo remove: {{model.name}}
+
+                <div [hidden]="name.valid||name.pristine" class="alert alert-danger">Um nome é requerido</div>
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" class="form-control" id="senha" [(ngModel)]="model.senha" name="senha">
+            </div>
+
+            <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Enviar</button>
+        </form>
+    </div>
+    <div [hidden]="!submitted">
+
+    </div>
+</div>

@@ -1,17 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <!-- Coment: (13/03/19 20:29) Html do componente app-->
-<html>
-<div style="text-align:center">
-  <h1>
-  {{ title }}
-  </h1>
+<div style="text-align:center;background-color: cadetblue;" class="card text-center">
+    <h1 class="card-header">
+        {{ title }}
+    </h1>
 </div>
-<nav>
-
+<nav class="nav">
+    <!-- aqui deveria ficar uma barra de nav super-->
 </nav>
-<h2>Login</h2>
+
+<app-login-form></app-login-form>
 
 <router-outlet></router-outlet>
-
-<app-livros></app-livros>
-</html>
