@@ -1,7 +1,32 @@
-# Clientemarca
+# Cliente Marcadores
+
+Projeto de front-end da aplicação Marcadores
+
+
+A ideia é permitir gerenciar marcadores de livros físicos e digitais em geral (como livros online de sites)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
 
+## [ Usar Angular ]
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
