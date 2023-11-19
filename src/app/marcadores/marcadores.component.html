@@ -1,4 +1,5 @@
-<p>
-  marcadores works!
-  {{idLivro}}
-</p>
+<ul>
+<li *ngFor="let marcador of marcadores">
+  {{marcador.pagina}} / {{marcador.data}} {{marcador.hora}}
+</li>
+</ul>
