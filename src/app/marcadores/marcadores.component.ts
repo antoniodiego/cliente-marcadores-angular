@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, inject } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-marcadores',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./marcadores.component.css']
 })
 export class MarcadoresComponent implements OnInit {
+ 
+  idLivro: Number;
 
-  constructor() { }
+  constructor(private route:ActivatedRoute) {
+    this.idLivro = Number(this.route.snapshot.params['idLivro']);
+  }
 
   ngOnInit() {
   }
 
+  @Input()
+  set id(idLivro: Number) {
+    this.idLivro = idLivro;
+  }
 }

@@ -1,6 +1,6 @@
 <h2>Livros</h2>
 <ul>
   <li *ngFor="let livro of livros">
-    <a routerLink="/marcadores/{{ livro.idLivro}} ">{{livro.nome}}</a>
+    <a [routerLink]="['/marcadores',  livro.idLivro]">{{livro.nome}}</a>
   </li>
 </ul>

@@ -5,7 +5,7 @@ import { MarcadoresComponent } from './marcadores/marcadores.component';
 
 const routes: Routes = [
   { path: 'livros', component: LivrosComponent },
-  { path: 'marcadores', component: MarcadoresComponent },
+  { path: 'marcadores/:idLivro', component: MarcadoresComponent },
   { path: '', redirectTo: '/livros', pathMatch: 'full' }, // redirect to `first-component`
 ];
 
