@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { LivrosComponent } from './livros/livros.component';
 import { LivrosService } from './livros.service';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { MarcadoresComponent } from './marcadores/marcadores.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LivrosComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    MarcadoresComponent
   ],
   imports: [
     BrowserModule,
