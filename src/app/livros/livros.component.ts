@@ -17,7 +17,15 @@ export class LivrosComponent implements OnInit {
   }
 
   listar() {
-      this.servicolivro.listar().subscribe(dados => this.livros = dados);
+    console.log("invocando listar");
+    var retorno = this.servicolivro.listar();
+    retorno.subscribe(dados => { this.livros = dados
+    console.log("mudança");
+    }
+    );
+    console.log("Após retorno listar");
+    console.log("retorno: " + retorno);
+
   }
 
 }
